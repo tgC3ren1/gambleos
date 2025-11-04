@@ -1,0 +1,48 @@
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Glow animation */
+.glow-text {
+  text-shadow: 0 0 10px rgba(169, 238, 22, 0.6), 0 0 20px rgba(20, 184, 255, 0.3);
+}
+
+/* OS Grid Card */
+.os-card {
+  @apply relative rounded-xl backdrop-blur-lg bg-white/5 border border-white/10 p-4 flex flex-col items-center text-center transition-all duration-300 hover:scale-105;
+}
+.os-card .icon {
+  font-size: 2rem;
+  margin-bottom: 6px;
+  filter: drop-shadow(0 0 8px rgba(169,238,22,0.6));
+}
+.os-card h2 {
+  font-weight: 700;
+  color: #A9EE16;
+}
+.os-card p {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+.os-card button {
+  font-size: 0.75rem;
+  background: linear-gradient(90deg,#A9EE16,#14B8FF);
+  color:#0A0F1E;
+  border:none;
+  border-radius:8px;
+  padding:4px 10px;
+  font-weight:700;
+  cursor:pointer;
+  transition:opacity .3s;
+}
+.os-card button:hover {
+  opacity:.8;
+}
+
+/* Boot Screen Animation */
+#bootScreen.fade-out {
+  opacity:0;
+  pointer-events:none;
+}
